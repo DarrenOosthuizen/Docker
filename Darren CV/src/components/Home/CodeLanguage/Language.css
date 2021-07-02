@@ -1,0 +1,9 @@
+.Skills-box:hover {
+  background: #1ecbe1;
+  color: #fff;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  transition: 1s;
+}

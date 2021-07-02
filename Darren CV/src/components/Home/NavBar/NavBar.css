@@ -1,0 +1,155 @@
+#header {
+    height: 100vh;
+  
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(../../../resources/images/Wallpaper.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .user-box {
+    top: 10vh;
+    left: 9.6vw;
+    width: 80vw;
+    position: absolute;
+  }
+  
+  .user-box img {
+    border-radius: 50%;
+    width: auto;
+    left: 0%;
+    border: 2px solid #1ecbe1;
+    position: relative;
+  }
+  
+  .user-box h1 {
+    color: #1ecbe1;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    position: relative;
+  }
+  
+  .user-box p {
+    color: #fff;
+    font-weight: Bold;
+    text-align: center;
+    position: relative;
+  }
+  
+  .scroll-btn {
+    bottom: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border: 2px solid #fff;
+    padding: 10px 10px 20px;
+    border-radius: 30px;
+  }
+  .navbar a {
+    color: #fff;
+  }
+  .navbar a:hover {
+    color: black !important;
+  }
+  
+  .scroll-bar span {
+    border: 2px solid #fff;
+    font-size: 10px;
+    border-radius: 30px;
+    animation: mover 1s infinite alternate;
+  }
+  
+  .scroll-bar {
+    animation: mover 1s infinite alternate;
+  }
+  
+  @keyframes mover {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(10px);
+    }
+  }
+
+  
+.nav-bar {
+    top: 0;
+    position: sticky;
+    z-index: 2;
+  }
+  
+  .navbar {
+    background-color: #1ecbe1;
+  }
+  
+  .nav-bar .fa-bars {
+    font-size: 35px;
+    color: white;
+  }
+  
+  .navbar-brand img {
+    height: 50px;
+  }
+  
+  .navbar-toggler {
+    outline: none !important;
+  }
+  
+  .navbar-toggler:focus {
+    box-shadow: none !important;
+  }
+  
+  .navbar-nav {
+    float: none;
+    text-align: center;
+  }
+  
+  .nav-link {
+    color: #fff !important;
+  }
+
+
+
+  /* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    color: #1ecbe1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .resumedrop:hover .dropdown-content {
+    display: block;
+  }
+  
+  .resumedrop p:hover {
+    color: black !important;
+  }
+  
+  .resumedrop p {
+    margin: 0px;
+  }
