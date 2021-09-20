@@ -50,7 +50,7 @@ const requestOptionsCustomer2 = {
           to: this.state.input.Email,
         },
       };
-      fetch("https://email.flystudio.co.za:/sendCVEmail", requestOptionsCustomer2)
+      fetch("https://email.flystudio.co.za/sendCVEmail", requestOptionsCustomer2)
         .then((response) => response.json())
         .then((data) => this.setState({ postId: data.id }));
     }
