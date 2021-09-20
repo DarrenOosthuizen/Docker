@@ -3,7 +3,7 @@ version: "3.7"
 services:
   FlyStudioEmail:
     container_name: EmailAPI
-    image: flystudioemail:1.0.1
+    image: darrenoosthuizen/flystudioemail:1.0.1
     restart: unless-stopped
     labels:
       - "traefik.enable=true"
