@@ -44,16 +44,6 @@ class EmailModal extends React.Component {
       input["Email"] = "";
       this.setState({ input: input });
 
-      const requestOptionsCustomer = {
-        method: "POST",
-        headers: {
-          to: this.state.input.Email,
-        },
-      };
-      fetch("http://flystudio.co.za:7341/sendCVEmail", requestOptionsCustomer)
-        .then((response) => response.json())
-        .then((data) => this.setState({ postId: data.id }));
-
 const requestOptionsCustomer2 = {
         method: "POST",
         headers: {
