@@ -3,7 +3,7 @@ version: "3.7"
 services:
   DarrenWebsite:
     container_name: DarrenWebsite
-    image: darrenoosthuizen/darrenwebsite:1.0.1
+    image: darrenoosthuizen/darrenwebsite:2.0.1
     restart: unless-stopped
     labels:
       - "traefik.enable=true"
@@ -17,6 +17,8 @@ services:
       - "80"
     networks:
       - proxy
+    volumes:
+      - ./nginx/:/etc/nginx/
 
 networks:
   proxy:
